@@ -24,7 +24,7 @@
                 <div class="row align-content-center align-items-center">
                     <div class="col-md-6 col-lg-3">
                         <div class="logo">
-                            <img src="./assets/image/logo.png" alt="">
+                            <img src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/logo.png" ); ?>" alt="">
                         </div>
                     </div>
                     <div class="col-lg-7 d-none d-lg-inline-block">
@@ -60,8 +60,9 @@
         <!-- bannar start  -->
         <section class="bannar-wrapper overflow-hidden" >
             <div class="bannar-active" >
-                <div class="bannar-bg-img bannar-height " data-background="./assets/image/bannar/bannar-bg.jpg">
+                <div class="bannar-bg-img bannar-height " data-background="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/bannar/bannar-bg.jpg" ); ?>">
                     <div class="container">
+                    
                         <div class="row">
                             <div class="col-xl-8">
                                 <div class="bannar-content">
@@ -80,7 +81,7 @@
                         <div class="t-slider-img"> </div>
                         
                    <div class="bannar-person">
-                    <img src="./assets/image/bannar/man-sheap.png" alt="">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/bannar/man-sheap.png" ); ?>" alt="">
                 </div>
                     </div>
                 </div>
@@ -104,7 +105,7 @@
                     </div>
                     <div class="col-md-5">
                         <div class="about-me-img-wrapper mb-40">
-                            <img src="./assets/image/about/person.jpg" alt="">
+                            <img src="<?php echo esc_url( get_template_directory_uri() . "/" . "/assets/image/about/person.jpg"); ?>" alt="">
                         </div>
                        
 
