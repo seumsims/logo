@@ -128,7 +128,7 @@
                     <div class="col-md-6">
                         <!-- My-work-Image  -->
                         <div class="my-work-img mt-40">
-                            <img src="./assets/image/works/project_imgae.jpg" alt="">
+                            <img src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/works/project_imgae.jpg" ); ?>" alt="">
                         </div>
                        
                     </div>
@@ -151,7 +151,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="my-work-img mt-40">
-                            <img src="./assets/image/works/project_imgae.jpg" alt="">
+                            <img src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/works/project_imgae.jpg" ); ?>" alt="">
                         </div>
                        
                     </div>
@@ -194,7 +194,7 @@
                 <div class="row  grid ">
                     <div class="col-xl-4 col-lg-4 col-sm-6 grid-item alkali text-center">
                         <div class="portfolio-item mb-30">
-                            <img src="./assets/image/cool_stap/02.jpg" alt="">
+                            <img src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/cool_stap/02.jpg" ); ?>" alt="">
                             <div class="portfolio-text">
                                 <span>Branding</span>
                                 <h3><a href="#">Hamble Triangle</a></h3>
@@ -204,7 +204,7 @@
                     </div>
                     <div class="col-xl-4 col-lg-4 col-sm-6 grid-item alkali text-center">
                         <div class="portfolio-item mb-30">
-                            <img src="./assets/image/cool_stap/02.jpg" alt="">
+                            <img src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/cool_stap/02.jpg" ); ?>" alt="">
                             <div class="portfolio-text">
                                 <span>Branding</span>
                                 <h3><a href="#">Hamble Triangle</a></h3>
@@ -214,7 +214,7 @@
                     </div>
                     <div class="col-xl-4 col-lg-4 col-sm-6 grid-item alkali text-center">
                         <div class="portfolio-item mb-30">
-                            <img src="./assets/image/cool_stap/02.jpg" alt="">
+                            <img src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/cool_stap/02.jpg" ); ?>" alt="">
                             <div class="portfolio-text">
                                 <span>Branding</span>
                                 <h3><a href="#">Hamble Triangle</a></h3>
@@ -224,7 +224,7 @@
                     </div>
                     <div class="col-xl-4 col-lg-4 col-sm-6 grid-item alkali text-center" text-center>
                         <div class="portfolio-item mb-30">
-                            <img src="./assets/image/cool_stap/02.jpg" alt="">
+                            <img src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/cool_stap/02.jpg" ); ?>" alt="">
                             <div class="portfolio-text">
                                 <span>Branding</span>
                                 <h3><a href="#">Hamble Triangle</a></h3>
@@ -234,7 +234,7 @@
                     </div>
                     <div class="col-xl-4 col-lg-4 col-sm-6 grid-item alkali text-center">
                         <div class="portfolio-item mb-30">
-                            <img src="./assets/image/cool_stap/02.jpg" alt="">
+                            <img src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/cool_stap/02.jpg" ); ?>" alt="">
                             <div class="portfolio-text">
                                 <span>Branding</span>
                                 <h3><a href="#">Hamble Triangle</a></h3>
@@ -244,7 +244,7 @@
                     </div>
                     <div class="col-xl-4 col-lg-4 col-sm-6 grid-item alkali text-center">
                         <div class="portfolio-item mb-30">
-                            <img src="./assets/image/cool_stap/02.jpg" alt="">
+                            <img src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/cool_stap/02.jpg" ); ?>" alt="">
                             <div class="portfolio-text">
                                 <span>Branding</span>
                                 <h3><a href="#">Hamble Triangle</a></h3>
@@ -365,7 +365,7 @@
                     
                     <div class="owl-carousel">
                         <div class="singel-testimonial d-flex align-items-center mt-30">
-                            <div class="singel-testimonail-img"><img src="./assets/image/testiomnoal/01.png" alt=""></div>
+                            <div class="singel-testimonail-img"><img src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/testiomnoal/01.png" ); ?>" alt=""></div>
                             <div class="singel-testimonail-content">
                             
                                 <p><i class="fas fa-quote-left"></i> Even though I am a seasoned business owner myself ideas.
@@ -398,8 +398,8 @@
                             <div class="singel-feature-item mb-30 mt-30 d-flex   justify-content-center  align-items-center text-center d-inline-block">
                      
                                 <div class="d-inline-block">
-                                    <img class="first_img" src="./assets/image/featured/01_01.png" alt="">
-                                    <img  class="last_img" src="./assets/image/featured/01_01h.png" alt="">
+                                    <img class="first_img" src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/featured/01_01.png" ); ?>" alt="">
+                                    <img  class="last_img" src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/featured/01_01h.png" ); ?>" alt="">
                                     <h6>Blockchain Tech</h6>
                                 </div>
                     
@@ -415,8 +415,8 @@
                             <div class="singel-feature-item mb-30 mt-30 d-flex  align-content-center justify-content-center align-content-end align-items-center text-center">
                      
                                 <div class="d-inline-block">
-                                    <img class="first_img" src="./assets/image/featured/01_03.png" alt="">
-                                    <img  class="last_img" src="./assets/image/featured/01_03h.png" alt="">
+                                    <img class="first_img" src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/featured/01_03.png" ); ?>" alt="">
+                                    <img  class="last_img" src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/featured/01_03h.png" ); ?>" alt="">
                                     <h6>Blockchain Tech</h6>
                                 </div>
                     
@@ -430,8 +430,8 @@
                             <div class="singel-feature-item mb-30 mt-30 d-flex  align-content-center justify-content-center align-content-end align-items-center text-center">
                      
                                 <div class="d-inline-block">
-                                    <img class="first_img" src="./assets/image/featured/01_02.png" alt="">
-                                    <img  class="last_img" src="./assets/image/featured/01_02h.png" alt="">
+                                    <img class="first_img" src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/featured/01_02.png" ); ?>" alt="">
+                                    <img  class="last_img" src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/featured/01_02h.png" ); ?>" alt="">
                                     <h6>Blockchain Tech</h6>
                                 </div>
                     
@@ -445,8 +445,8 @@
                             <div class="singel-feature-item  mb-30 mt-30 d-flex  align-content-center justify-content-center align-content-end align-items-center text-center">
                      
                                 <div class="d-inline-block">
-                                    <img class="first_img" src="./assets/image/featured/01_01.png" alt="">
-                                    <img  class="last_img" src="./assets/image/featured/01_01h.png" alt="">
+                                    <img class="first_img" src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/featured/01_01.png" ); ?>" alt="">
+                                    <img  class="last_img" src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/featured/01_01h.png" ); ?>" alt="">
                                     <h6>Blockchain Tech</h6>
                                 </div>
                     
@@ -495,7 +495,7 @@
         </section>
         <!-- features end  -->
         <!-- get-20-offer start  -->
-        <section class="pt-100 pb-100" data-background="./assets/image/offer/offer_bg.png">
+        <section class="pt-100 pb-100" data-background="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/offer/offer_bg.png" ); ?>">
 
                 <div class="container">
                     <div class="row">
@@ -529,7 +529,7 @@
             <div class="col-lg-4 col-md-6  col-sm-12 text-center" >
 <div class="singel-team mb-100">
     <div class="team-img">
-        <img src="./assets/image/tram/persone.jpg" alt="">
+        <img src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/tram/persone.jpg" ); ?>" alt="">
     </div>
     <div class="team-text text-center">
         <h5>Rosalina D. William</h5>
@@ -548,7 +548,7 @@
             <div class="col-lg-4 col-md-6  col-sm-12 text-center">
 <div class="singel-team mb-100">
     <div class="team-img">
-        <img src="./assets/image/tram/persone.jpg" alt="">
+        <img src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/tram/persone.jpg" ); ?>" alt="">
     </div>
     <div class="team-text text-center">
         <h5>Rosalina D. William</h5>
@@ -567,7 +567,7 @@
             <div class="col-lg-4 col-md-6  col-sm-12 text-center">
 <div class="singel-team mb-100">
     <div class="team-img">
-        <img src="./assets/image/tram/persone.jpg" alt="">
+        <img src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/tram/persone.jpg" ); ?>" alt="">
     </div>
     <div class="team-text text-center">
         <h5>Rosalina D. William</h5>
@@ -600,7 +600,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-7">
-                        <div class="choce_img"><img src="./assets/image/why_choce_us/why.png" alt=""></div>
+                        <div class="choce_img"><img src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/why_choce_us/why.png" ); ?>" alt=""></div>
 
                     </div>
                     <div class="col-md-5">
@@ -708,7 +708,7 @@
                     <div class="col-lg-7">
                         <div class="singel-blog d-flex align-items-center mb-40">
                             <div class="blog-img">
-                                <img src="./assets/image/blog/img-with-index.jpg" alt="">
+                                <img src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/blog/img-with-index.jpg" ); ?>" alt="">
                             </div>
                          
                                 <div class="blog-text">
@@ -727,7 +727,7 @@
                         </div>
                         <div class="singel-blog d-flex align-items-center mb-40">
                             <div class="blog-img">
-                                <img src="./assets/image/blog/img-with-index.jpg" alt="">
+                                <img src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/blog/img-with-index.jpg" ); ?>" alt="">
                             </div>
                          
                                 <div class="blog-text">
@@ -788,7 +788,7 @@
                 <div class="col-md-4">
                     <div class="footer-left-content mb-40 text-center">
                         <div class="f-logo">
-                            <img src="./assets/image/b_logo.png" alt="">
+                            <img src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/b_logo.png" ); ?>" alt="">
                         </div>
                         <span>Minimal & Crative Portfolio/CV/Biodata Solution in One Platform.</span>
                         <div class="footer-social">
