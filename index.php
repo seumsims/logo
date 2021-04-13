@@ -7,6 +7,15 @@
     <title><?php bloginfo("name"); ?></title>
 </head>
 <body>
-    
+    <?php
+    while(have_posts()) {
+        the_post();
+
+        _e('<h1>');
+        the_title();
+        
+        _e('</h1>');
+    }
+     ?>
 </body>
 </html>
