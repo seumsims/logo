@@ -3,9 +3,10 @@
 
 <head>
     <!-- Page Title -->
-    <title><?php bloginfo(); ?></title>
-     <!-- Meta Data -->
-     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>tfQuickstart || Quickstart for Themeforest HTML Template</title>
+
+    <!-- Meta Data -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
@@ -13,7 +14,20 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.png" />
-    <?php wp_head(); ?>
+
+    <!-- Web Fonts -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!-- ======= FontAwesome ======= -->
+    <link rel="stylesheet" href="./assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+
+    <!-- ======= Main Stylesheet ======= -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- ======= Custom Stylesheet ======= -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
 
 <body>
@@ -832,7 +846,23 @@
             </div>
         </div>
     </footer>
-    <?php wp_footer(); ?>
+    <!-- ======= jQuery Library ======= -->
+    <script src=" assets/js/jquery.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script> 
+    <script src="assets/js/jquery.scrollUp.min.js"></script> 
+    <script src="assets/js/jquery.meanmenu.min.js"></script> 
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script> 
+    <script src="assets/js/owl.carousel.min.js"></script> 
+
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+
+    <!-- ======= Main JS ======= -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- ======= Custom JS ======= -->
+    <script src="assets/js/custom.js"></script>
 </body>
 
 </html>
