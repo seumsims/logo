@@ -5,4 +5,4 @@ function logo_bootstrapping() {
     add_theme_support("title-tag");
 
 }
-add_action("after_theme_setup","logo_bootstrapping");
+add_action("after_setup_theme","logo_bootstrapping");
