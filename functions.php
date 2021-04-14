@@ -4,8 +4,36 @@ function logo_bootstrapping() {
     add_theme_support("post-thumbnails");
     add_theme_support("title-tag");
 
+    /**
+		 * Add post-formats support.
+		 */
+		add_theme_support(
+			'post-formats',
+			array(
+				'link',
+				'aside',
+				'gallery',
+				'image',
+				'quote',
+				'status',
+				'video',
+				'audio',
+				'chat',
+			)
+		);
+
 }
 add_action("after_setup_theme","logo_bootstrapping");
+
+register_nav_menus(
+    array(
+        'primary' => esc_html__( 'Primary menu logo', 'logo' ),
+        //'footer'  => __( 'Secondary menu', 'twentytwentyone' ),
+        'testmenu' => __( 'Test menu logo', 'logo' )
+    )
+);
+
+
 /**
  * Enqueue scripts and styles.
  */

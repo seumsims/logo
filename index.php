@@ -42,6 +42,14 @@
                                     <li><a href="#">Contact</a></li>
                                 </ul>
                             </nav>
+                            <?php wp_nav_menu(array(
+                                
+                                'theme_location' => 'primary'
+                            )); ?>
+                            <?php wp_nav_menu(array(
+                                
+                                'theme_location' => 'testmenu'
+                            )); ?>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-2 d-none d-xl-inline-block">
@@ -93,7 +101,7 @@
         <section class="about-me-wrapper  mt-100 mb-60">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div id="logoAbout" class="col-md-7">
                         <div class="about-me-left mb-40">
                             <h2>Hi, I’m James Watt
                                 
@@ -260,7 +268,7 @@
         </section>
         <!-- upcomming end  -->
         <!-- skill start  -->
-        <section class="grey-bg pt-100 pb-100">
+        <section id="logoSkills" class="grey-bg pt-100 pb-100">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 offset-md-3 text-center">
