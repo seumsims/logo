@@ -29,7 +29,7 @@ function logo_book_cpt_init() {
  
     $args = array(
         'labels'             => $labels,
-        //'menu_icon' => 'dashicons-book',
+        'menu_icon' => 'dashicons-book',
         'public'             => true,
         'publicly_queryable' => true,
         'show_ui'            => true,
@@ -39,8 +39,9 @@ function logo_book_cpt_init() {
         'capability_type'    => 'post',
         'has_archive'        => true,
         'hierarchical'       => false,
-        'menu_position'      => null,
+        'menu_position'      => 20,
         'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+        'show_in_rest'       => true
     );
  
     register_post_type( 'book', $args );
