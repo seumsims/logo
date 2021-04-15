@@ -1,6 +1,6 @@
 <?php wp_head(); ?>
 <?php 
-print_r(is_single());
+
 while(have_posts()) {
 
     the_post();
