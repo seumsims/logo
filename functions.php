@@ -43,7 +43,8 @@ register_nav_menus(
     )
 );
 
-require_once("bookpoststype.php");
+require("bookpoststype.php");
+require("cookposttype.php");
 
 
 
