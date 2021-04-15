@@ -1,6 +1,6 @@
 <?php wp_head(); ?>
 <?php 
-/*
+
 while(have_posts()) {
 
     the_post();
@@ -9,6 +9,6 @@ while(have_posts()) {
     _e("</h1>");
 
 } 
-*/
 ?>
+
 <?php wp_footer(); ?>

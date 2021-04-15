@@ -1,11 +1,21 @@
 <?php
 
-
+//flush_rewrite_rules( false );
+//flush_rewrite_rules( true );
 
 function logo_bootstrapping() {
+
+    /* Flush rewrite rules for custom post types. */
+    
+    add_action( 'after_switch_theme', 'flush_rewrite_rules' );
+
     load_theme_textdomain("logo");
     add_theme_support("post-thumbnails");
-    add_theme_support("title-tag");
+    add_theme_support("title-tag");add_post_type_support('page', 'thumbnail');
+
+    
+    
+    add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
 
     /**
 		 * Add post-formats support.
@@ -45,6 +55,9 @@ function book_setup_post_type() {
     register_post_type( 'book', $args );
 }
 add_action( 'init', 'book_setup_post_type' );
+
+
+
 
 
 /**
