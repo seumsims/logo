@@ -35,12 +35,13 @@ function logo_book_cpt_init() {
         'show_ui'            => true,
         'show_in_menu'       => true,
         'query_var'          => true,
-        'rewrite'            => array( 'slug' => 'book' ),
+        'rewrite'            => array( 'slug' => 'books' ),
         'capability_type'    => 'post',
         'has_archive'        => true,
         'hierarchical'       => false,
         'menu_position'      => 20,
         'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+        'taxonomies'         => array( 'category', 'post_tag' ),
         'show_in_rest'       => true
     );
  
