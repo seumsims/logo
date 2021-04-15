@@ -35,7 +35,7 @@ function logo_book_cpt_init() {
         'show_ui'            => true,
         'show_in_menu'       => true,
         'query_var'          => true,
-        'rewrite'            => array( 'slug' => 'books' ),
+        //'rewrite'            => array( 'slug' => 'books' ),
         'capability_type'    => 'post',
         'has_archive'        => true,
         'hierarchical'       => false,
