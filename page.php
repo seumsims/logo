@@ -1,6 +1,6 @@
 <?php wp_head(); ?>
 <?php 
-
+_e("this is page");
 while(have_posts()) {
 
     the_post();

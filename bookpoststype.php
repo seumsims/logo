@@ -1,4 +1,4 @@
-<?php
+<?php 
 function logo_book_cpt_init() {
     $labels = array(
         'name'                  => _x( 'Books', 'Post type general name', 'logo' ),
