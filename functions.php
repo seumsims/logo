@@ -1,4 +1,7 @@
 <?php
+
+
+
 function logo_bootstrapping() {
     load_theme_textdomain("logo");
     add_theme_support("post-thumbnails");
@@ -32,6 +35,16 @@ register_nav_menus(
         'testmenu' => __( 'Test menu logo', 'logo' )
     )
 );
+
+function book_setup_post_type() {
+    $args = array(
+        'public'    => true,
+        'label'     => __( 'Books', 'logo' ),
+        'menu_icon' => 'dashicons-book',
+    );
+    register_post_type( 'book', $args );
+}
+add_action( 'init', 'book_setup_post_type' );
 
 
 /**

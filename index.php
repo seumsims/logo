@@ -13,10 +13,10 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.png" />
-    <?php wp_head(); ?>
+    <?php  wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
     <!-- header start  -->
     <header>
         <div class="header-wrapper ">
