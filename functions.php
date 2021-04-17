@@ -91,3 +91,6 @@ function logo_scripts() {
 }
 add_action("wp_enqueue_scripts", "logo_scripts");
 //_e(get_template_directory_uri());
+
+
+//require_once( "insertpost.php" );
