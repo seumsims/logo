@@ -4,4 +4,6 @@
 //the_content();
 
 ?>
+
+
 <?php wp_footer(); ?>
