@@ -108,7 +108,9 @@ function logo_post_type_for_one_page() {
             'labels' => [
                 'name' => 'Manage Logo',
                 'singular_name' => 'Logo'
-            ]
+            ],
+            'show_in_rest' => false,
+            'menu_icon' => 'dashicons-admin-appearance'
     
 
     );
