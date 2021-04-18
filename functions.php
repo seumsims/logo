@@ -99,7 +99,8 @@ function logo_post_type_for_one_page() {
 
     $args = array(
 
-            'public' => true,
+        'hierarchical' => true,    
+        'public' => true,
             'has_archive' => true,
             'supports' => ['title','editor','thumbnail','author','custom-fields',
             'post-formats'],
