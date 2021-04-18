@@ -101,11 +101,15 @@ function logo_post_type_for_one_page() {
 
             'public' => true,
             'has_archive' => true,
-            'supports' => array('title','editor','thumbnail','author')
+            'supports' => array('title','editor','thumbnail','author','custom-fields',
+            'post-formats' => array('quote'),
+            
+            )
 
     );
     
     register_post_type("logo", $args);
+    flush_rewrite_rules();
 
 }
 
