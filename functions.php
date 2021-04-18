@@ -107,10 +107,12 @@ function logo_post_type_for_one_page() {
             'rewrite' => ['slug' => 'sections'],
             'labels' => [
                 'name' => 'Manage Logo',
-                'singular_name' => 'Logo'
+                'singular_name' => 'Logo',
+                'featured_image'        => __( 'Logo image', 'logo' ),
             ],
             'show_in_rest' => false,
-            'menu_icon' => 'dashicons-admin-appearance'
+            'menu_icon' => 'dashicons-admin-appearance',
+            
     
 
     );

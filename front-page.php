@@ -58,7 +58,7 @@ _e("this is front page"); ?>
         <!-- bannar start  -->
         <section class="bannar-wrapper overflow-hidden" >
             <div class="bannar-active" >
-                <div class="bannar-bg-img bannar-height " data-background="<?php echo get_the_post_thumbnail_url( 362 ); ?>">
+                <div class="bannar-bg-img bannar-height " data-background="<?php esc_attr_e(get_the_post_thumbnail_url( 362 )); ?>">
                     <div class="container">
                     
                         <div class="row">
