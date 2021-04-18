@@ -103,7 +103,11 @@ function logo_post_type_for_one_page() {
             'has_archive' => true,
             'supports' => ['title','editor','thumbnail','author','custom-fields',
             'post-formats'],
-            'rewrite' => ['slug' => 'sections']
+            'rewrite' => ['slug' => 'sections'],
+            'labels' => [
+                'name' => 'Manage Logo',
+                'singular_name' => 'Logo'
+            ]
     
 
     );
