@@ -58,8 +58,7 @@ _e("this is front page"); ?>
         <!-- bannar start  -->
         <section class="bannar-wrapper overflow-hidden" >
             <div class="bannar-active" >
-                <div class="bannar-bg-img bannar-height " data-background="<?php // Give the Post Thumbnail a class "alignleft".
-echo get_the_post_thumbnail( 362 , 'full', array( 'class' => 'alignleft' ) ); ?>">
+                <div class="bannar-bg-img bannar-height " data-background="<?php echo get_the_post_thumbnail_url( 362 ); ?>">
                     <div class="container">
                     
                         <div class="row">
