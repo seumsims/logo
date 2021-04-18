@@ -121,3 +121,9 @@ function logo_post_type_for_one_page() {
 }
 
 add_action("init", "logo_post_type_for_one_page");
+
+function logo_one_page_post_type_custom_taxonomy_types() {
+
+}
+
+add_action("init", "logo_one_page_post_type_custom_taxonomy_types");
