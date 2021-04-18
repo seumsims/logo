@@ -101,8 +101,8 @@ function logo_post_type_for_one_page() {
 
             'public' => true,
             'has_archive' => true,
-            'supports' => array('title','editor','thumbnail','author','custom-fields',
-            'post-formats' => array('quote'),
+            'supports' => array('title','editor','thumbnail','author','custom-fields', 'post-thumbnails',
+            'post-formats' => array('quote','image'),
             
             )
 

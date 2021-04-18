@@ -11,6 +11,7 @@ while(have_posts()) {
     _e("<h1 style=\"color:green\">");
     the_title();
     _e("</h1>");
+    the_post_thumbnail();
     _e("<article>");
     the_content();
     _e("</article>");
