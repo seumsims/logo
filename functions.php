@@ -128,7 +128,7 @@ function logo_one_page_post_type_custom_taxonomy_types() {
         
 
         'public' => true,
-        'hierarchical' => false
+        'hierarchical' => true
 
 
     ];
