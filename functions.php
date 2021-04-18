@@ -126,7 +126,11 @@ function logo_one_page_post_type_custom_taxonomy_types() {
 
     $args = [
         
-
+        'labels' => [
+            'name' => 'Logo Types',
+            'singular_name' => 'Type',
+        ],
+        
         'public' => true,
         'hierarchical' => true
 
