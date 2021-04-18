@@ -97,6 +97,8 @@ add_action("wp_enqueue_scripts", "logo_scripts");
 
 function logo_post_type_for_one_page() {
 
+    register_post_type("logo");
+
 }
 
 add_action("init", "logo_post_type_for_one_page");
