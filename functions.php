@@ -99,7 +99,9 @@ function logo_post_type_for_one_page() {
 
     $args = array(
 
-            'public' => true
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array('title')
 
     );
     
