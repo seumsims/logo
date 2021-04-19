@@ -102,10 +102,10 @@ function logo_post_type_for_one_page() {
 
         'hierarchical' => true,    
         'public' => true,
-        'show_ui' => true,
+        
             'has_archive' => true,
-            'supports' => ['page','title','editor','thumbnail','author','custom-fields',
-            'post-formats','page-attributes'],
+            'supports' => ['title','editor','thumbnail','author','custom-fields',
+            'post-formats'],
             'rewrite' => ['slug' => 'sections'],
             'labels' => [
                 'name' => 'Manage Logo',
