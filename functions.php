@@ -1,4 +1,4 @@
-<?php
+<?php //_e(basename(get_page_template(  )) );
 
 
 
@@ -71,8 +71,8 @@ add_action("wp_enqueue_scripts", "logo_styles");
 function logo_scripts() {
 
     
-_e(get_page_template(  ));
-die();
+//_e(get_page_template(  ));
+//die();
     
     
     wp_enqueue_script("logo-jquery-min" , get_theme_file_uri ("assets/js/jquery.min.js"),array("jquery"),null,true);
