@@ -1,0 +1,37 @@
+.footer-left-content{
+    color: #fff;
+    span{
+        display: block;
+        padding-top: 20px;
+    }
+    .footer-social{
+        ul{
+            li{
+                display: inline-block;
+                a{
+                    color: #fff;
+                    margin: 15px;
+                    padding-top: 20px;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.footer-right-content{
+ 
+    h3{
+        color: #fff;
+        font-size: 35px;
+    }
+    .footer-right-cta{
+        margin-top: 30px;
+        color: #fff;
+        span{
+            color: #afb5c9;
+        }
+        p{
+            color: #fff;
+        }
+    }
+}
