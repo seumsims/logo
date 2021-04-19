@@ -1,6 +1,3 @@
-<?php 
-esc_html_e( basename(get_page_template(  ))  );
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +8,10 @@ esc_html_e( basename(get_page_template(  ))  );
     <?php wp_head(  ); ?>
 </head>
 <body <?php body_class(  )?>>
-<?php the_title( ); ?>
+<?php 
+//esc_html_e( basename(get_page_template(  ))  );
+?>
+<?php //the_title( ); ?>
 <?php the_content(); ?>
 <?php wp_footer(  ) ?>   
 </body>
