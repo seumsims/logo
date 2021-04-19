@@ -97,6 +97,7 @@ add_action("wp_enqueue_scripts", "logo_scripts");
 //require_once( "insertpost.php" );
 
 function logo_post_type_for_one_page() {
+   
 
     $args = array(
 

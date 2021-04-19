@@ -1,9 +1,7 @@
 <?php /*
-Template Name: Test Page
-Template Post Type: logo
-*/
+Template Name: Test Page 2
 
-esc_html_e( basename(get_page_template(  ))  );
+*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
