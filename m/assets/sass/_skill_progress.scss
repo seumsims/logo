@@ -1,0 +1,26 @@
+.singel-skill-progress-bar{
+    position: relative;
+    h6{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .progress {
+
+        display: flex;
+        height: 2px;
+        overflow: hidden;
+        background-color: #e9ecef;
+        border-radius: .25rem;
+        .progress-bar{
+            background-color: #2196f3;
+        }
+        span{
+            position: absolute;
+        color: black;
+        top: 0;
+        left: 85%;
+        font-size: 16px;
+        z-index: 100;
+        }
+    }
+}

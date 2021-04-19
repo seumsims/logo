@@ -1,0 +1,129 @@
+
+.bannar-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+.bannar-person_image{
+    position: absolute;
+}
+.bannar-height{
+    min-height: 840px;
+    display: flex;
+    align-items: center;
+    @media #{$laptop}{
+        min-height: 730px;
+    }
+    @media #{$lg}{
+        min-height: 600px;
+    }
+
+}
+.bannar-content{
+    & span{
+        color: #fefefe;
+        font-size: 20px;
+    }
+    & h1{
+        color: $white;
+        font-size: 65px;
+        padding-bottom: 25px;
+        & span{
+            color: #2196f3;
+            font-size:inherit
+        }
+    }
+    & p{
+        color: #bdb7b7;
+        font-size: 22px;
+        padding-right: 10px;
+        line-height: 1.45;
+    }
+    & a.btn{
+        color: #fff;
+        margin-top: 20px;
+       }
+   
+
+}
+
+.bannar-person_image {
+    position: absolute;
+    z-index: 1;
+    right: 10%;
+    top: 6%;
+    @media #{$laptop}{
+        right: 5%;
+    }
+    @media #{$lg}{
+       display: none;
+    }
+    @media #{$md}{
+       display: none;
+    }
+    @media #{$sm}{
+        display: none;
+     }
+    @media #{$xs}{
+        display: none;
+     }
+
+    .bannar-person img{
+    
+     
+        right: 7%;
+        
+        @media #{$laptop}{
+            width: 400px;
+        }
+        @media #{$lg}{
+            min-height: 600px;
+        }
+       
+    
+    
+    }
+}
+
+/* bannar-shap-css */
+.t-slider-img {position: relative;}
+.t-slider-img::before {
+    position: absolute;
+    content: "";
+    left: -166px;
+    top: 163px;
+    width: 693px;
+    height: 674px;
+    background: #2196f3;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    -webkit-animation: sliderShape 5s linear infinite;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    @media #{$laptop}{
+        left: -83px;
+width: 524px;
+height: 592px;
+    }
+    @media #{$lg}{
+       
+    }
+}
+@keyframes sliderShape{
+  0%,100%{
+  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+  }
+  34%{
+      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+  }
+  50%{
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+  }
+  67%{
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+    transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+  }
+}
+
