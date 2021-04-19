@@ -166,12 +166,12 @@ add_action("init", "new_post_type_for_one_page");
 function wpdocs_register_my_custom_menu_page(){
     add_menu_page( 
         __( 'Custom Menu Title', 'logo' ),
-        'custom menu',
+        'Logo Menu',
         'manage_options',
         'custompage',
         'my_custom_menu_page',
         plugins_url( 'screenshot.png' ),
-        6
+        10
     ); 
 }
 add_action( 'admin_menu', 'wpdocs_register_my_custom_menu_page' );
