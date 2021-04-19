@@ -15,7 +15,8 @@ esc_html_e( basename(get_page_template(  ))  );
     <title><?php the_title( ); ?></title>
     <?php wp_head(  ); ?>
 </head>
-<body>
+<body <?php body_class(  )?>>
+<?php the_post_thumbnail(); ?>
 <?php wp_footer(  ) ?>   
 </body>
 </html>
