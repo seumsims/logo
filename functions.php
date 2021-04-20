@@ -163,27 +163,31 @@ add_action("init", "new_post_type_for_one_page");
 /**
  * Register a custom menu page.
  */
-function wpdocs_register_my_custom_menu_page(){
+function logo_custom_menu_page(){
 
     /**
  * Display a custom menu page
  */
-function my_custom_menu_page(){
-    esc_html_e( 'Admin Logo Page Test', 'logo' );  
+function custom_menu_page_logo(){
+    //esc_html_e( 'Admin Logo Page Test', 'logo' );  
+    // esc_attr_e( get_theme_file_uri ("testmenupage.php") , 'logo' ) ;
+    // esc_html_e( get_theme_file_uri ("testmenupage.php") , 'logo' );
+    esc_html_e( require_once("testmenupage.php") , 'logo' );
 }
     add_menu_page( 
         __( 'Logo Menu Name', 'logo' ),
         'Logo Menu',
         'manage_options',
         
+        
         $menu_slug = 'logopage',
-        'my_custom_menu_page',
+        'custom_menu_page_logo',
         $icon_url   = 'dashicons-desktop',
         10
     ); 
     
    
 }
-add_action( 'admin_menu', 'wpdocs_register_my_custom_menu_page' );
+add_action( 'admin_menu', 'logo_custom_menu_page' );
  
 
