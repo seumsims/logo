@@ -1,21 +1,4 @@
-<?php class WPDribbble {
-    public function __construct()
-    {
-        
-    }
-
-    
-    public function test()
-    {
-        _e('WPDribbble Test');
-        _e('[baztag]content[/baztag]');
-    }
-}
- 
-$wpDribbble = new WPDribbble(); 
-$wpDribbble -> test();
-// var_dump($wpDribbble);
- ?>
+<?php  ?>
 <div id="boxmID">
 <div class="welcome-panel"> </div>
  </div>

@@ -173,9 +173,7 @@ function logo_custom_menu_page(){
  * Display a custom menu page
  */
 function custom_menu_page_logo(){
-    //esc_html_e( 'Admin Logo Page Test', 'logo' );  
-    // esc_attr_e( get_theme_file_uri ("testmenupage.php") , 'logo' ) ;
-    // esc_html_e( get_theme_file_uri ("testmenupage.php") , 'logo' );
+   
     require_once("testmenupage.php");
 }
     add_menu_page( 
@@ -202,16 +200,22 @@ function logo_custom_page_css_enq() {
 add_action("admin_enqueue_scripts", "logo_custom_page_css_enq");
 
 
-add_shortcode( 'baztag', 'wpdocs_baztag_func' );
-function wpdocs_baztag_func( $atts, $content = "" ) {
-    function htmview() {
-
-        _e("htmview");
-
-    }
-    $content = htmview();
-    return $content;
+add_filter('manage_posts_columns', 'posts_columns_id', 5);
+    add_action('manage_posts_custom_column', 'posts_custom_id_columns', 5, 2);
+    add_filter('manage_pages_columns', 'posts_columns_id', 5);
+    add_action('manage_pages_custom_column', 'posts_custom_id_columns', 5, 2);
+ 
+function posts_columns_id($defaults){
+    $defaults['wps_post_id'] = __('ID');
+    return $defaults;
 }
+function posts_custom_id_columns($column_name, $id){
+    if($column_name === 'wps_post_id'){
+            echo $id;
+    }
+}
+
+
 
 
 
