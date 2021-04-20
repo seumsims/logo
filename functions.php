@@ -15,6 +15,13 @@ function logo_bootstrapping() {
     add_post_type_support('page', 'thumbnail');
 
     add_theme_support( "custom-header" );
+
+    $logo_custom_header_box_setting = array( 
+            
+        'width' => 1200,
+        'height' => 900,
+    );
+    add_action( "custom-header", "logo_custom_header_box_setting" );
     
 
     
