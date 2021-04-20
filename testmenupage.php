@@ -7,6 +7,25 @@ id="community-events-location"
 class="regular-text" type="text" 
 name="community-events-location" 
 placeholder=" Awesome ">
+<br>
+<input 
+id="community-events-location" 
+class="regular-text" type="text" 
+name="community-events-location" 
+placeholder=" Awesome ">
+<br>
+<input 
+id="community-events-location" 
+class="regular-text" type="text" 
+name="community-events-location" 
+placeholder=" Awesome ">
+<br>
+<input 
+id="community-events-location" 
+class="regular-text" type="text" 
+name="community-events-location" 
+placeholder=" Awesome ">
+<br>
 <?php
 
 } 
