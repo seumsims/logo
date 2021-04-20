@@ -1,5 +1,7 @@
-<?php  var_dump(get_post(108));  ?>
+<?php  //var_dump(get_post(108));  ?>
 
+
+<?php $test = get_post( 405  ); $testshow = $test-> post_name; _e($testshow); ?>
 
 <div id="boxmID">
 <div class="welcome-panel"> 
@@ -23,6 +25,7 @@ _e($postlogo_content);
 ?>
 </textarea>
 </div>
+
 
 
 

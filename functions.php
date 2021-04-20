@@ -212,6 +212,7 @@ function posts_columns_id($defaults){
 function posts_custom_id_columns($column_name, $id){
     if($column_name === 'wps_post_id'){
             _e($id);
+            
     }
 }
 
