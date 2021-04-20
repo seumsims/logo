@@ -200,11 +200,7 @@ function logo_custom_page_css_enq() {
 
 }
 add_action("admin_enqueue_scripts", "logo_custom_page_css_enq");
-/*
-class Test extends Custom_Image_Header {
+$ctest = new Custom_Image_Header();
+$ctest -> get_current_screen();
 
-}
- $ctest = new Test();
- $ctest -> help();
 
-*/
