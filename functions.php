@@ -20,6 +20,8 @@ function logo_bootstrapping() {
             
         'width' => 1200,
         'height' => 900,
+        'flex-width' => true,
+        'flex-height' => true
     );
     add_theme_support( "custom-header", $logo_custom_header_box_setting );
     
