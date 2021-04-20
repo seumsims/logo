@@ -1,4 +1,6 @@
-<?php 
+<?php // _e(admin_url( ));
+require_once('includes/class-custom-image-header.php' );
+
 
 
 
@@ -198,7 +200,11 @@ function logo_custom_page_css_enq() {
 
 }
 add_action("admin_enqueue_scripts", "logo_custom_page_css_enq");
+/*
+class Test extends Custom_Image_Header {
 
+}
+ $ctest = new Test();
+ $ctest -> help();
 
- 
-
+*/
