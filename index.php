@@ -1,3 +1,4 @@
+<?php // wp_die( WP_Error ); ?>  
 <!DOCTYPE html>
 <html lang="en">
 <head>

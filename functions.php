@@ -164,6 +164,8 @@ add_action("init", "new_post_type_for_one_page");
  * Register a custom menu page.
  */
 function logo_custom_menu_page(){
+    
+    
 
     /**
  * Display a custom menu page
@@ -189,5 +191,12 @@ function custom_menu_page_logo(){
    
 }
 add_action( 'admin_menu', 'logo_custom_menu_page' );
+
+function logo_custom_page_css_enq() {
+
+    wp_enqueue_style("logo-style-custom-page", get_stylesheet_uri());
+
+}
+add_action("admin_enqueue_scripts", "logo_custom_page_css_enq");
  
 
