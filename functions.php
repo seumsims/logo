@@ -11,8 +11,11 @@ function logo_bootstrapping() {
     load_theme_textdomain("logo");
     add_theme_support("post-thumbnails");
     add_theme_support("title-tag");
+    
     add_post_type_support('page', 'thumbnail');
+
     add_theme_support( "custom-header" );
+    
 
     
     
@@ -244,8 +247,15 @@ function wporg_custom_box_html( $post ) {
 
 
 function logo_index_page_template_banner() {
-    if(is_page(  )) {
-        if(current_theme_supports( "custom_header")) {
+
+    var_dump(is_front_page(  ));
+
+    if(is_front_page(  )) {
+
+        var_dump(current_theme_supports( "custom-header" ));
+
+        if(current_theme_supports( "custom-header")) {
+            
             ?>
 
             <style>
