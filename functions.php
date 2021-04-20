@@ -204,7 +204,12 @@ add_action("admin_enqueue_scripts", "logo_custom_page_css_enq");
 
 add_shortcode( 'baztag', 'wpdocs_baztag_func' );
 function wpdocs_baztag_func( $atts, $content = "" ) {
-    $content = "SALAM";
+    function htmview() {
+
+        _e("htmview");
+
+    }
+    $content = htmview();
     return $content;
 }
 
