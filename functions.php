@@ -248,11 +248,11 @@ function wporg_custom_box_html( $post ) {
 
 function logo_index_page_template_banner() {
 
-    var_dump(is_front_page(  ));
+    // var_dump(is_front_page(  ));
 
     if(is_front_page(  )) {
 
-        var_dump(current_theme_supports( "custom-header" ));
+        // var_dump(current_theme_supports( "custom-header" ));
 
         if(current_theme_supports( "custom-header")) {
             
@@ -261,6 +261,7 @@ function logo_index_page_template_banner() {
             <style>
                 .bannar-bg-img {
                     background-image: url(<?php esc_html_e( header_image() ); ?>);
+                    background-size: cover;
                 }
             </style>
 
