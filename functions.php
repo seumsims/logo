@@ -12,6 +12,7 @@ function logo_bootstrapping() {
     add_theme_support("post-thumbnails");
     add_theme_support("title-tag");
     add_post_type_support('page', 'thumbnail');
+    add_theme_support( "custom-header" );
 
     
     
@@ -242,7 +243,23 @@ function wporg_custom_box_html( $post ) {
 }
 
 
+function logo_index_page_template_banner() {
+    if(is_page(  )) {
+        if(current_theme_supports( "custom_header")) {
+            ?>
 
+            <style>
+                .bannar-bg-img {
+                    background-image: url(<?php esc_html_e( header_image() ); ?>);
+                }
+            </style>
+
+            <?php
+        }
+    }
+}
+
+add_action( "wp_head", "logo_index_page_template_banner",100 );
 
 
 
