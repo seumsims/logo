@@ -7,25 +7,7 @@ id="community-events-location"
 class="regular-text" type="text" 
 name="community-events-location" 
 placeholder=" Awesome ">
-<br>
-<input 
-id="community-events-location" 
-class="regular-text" type="text" 
-name="community-events-location" 
-placeholder=" Awesome ">
-<br>
-<input 
-id="community-events-location" 
-class="regular-text" type="text" 
-name="community-events-location" 
-placeholder=" Awesome ">
-<br>
-<input 
-id="community-events-location" 
-class="regular-text" type="text" 
-name="community-events-location" 
-placeholder=" Awesome ">
-<br>
+<textarea id="metavalue" name="metavalue" rows="2" cols="25"></textarea>
 <?php
 
 } 
