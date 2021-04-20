@@ -8,6 +8,7 @@
     public function test()
     {
         _e('WPDribbble Test');
+        _e('[baztag]content[/baztag]');
     }
 }
  

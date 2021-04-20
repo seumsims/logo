@@ -1,5 +1,5 @@
-<?php // _e(admin_url( ));
-require_once('includes/class-custom-image-header.php' );
+<?php 
+
 
 
 
@@ -200,7 +200,13 @@ function logo_custom_page_css_enq() {
 
 }
 add_action("admin_enqueue_scripts", "logo_custom_page_css_enq");
-$ctest = new Custom_Image_Header();
-$ctest -> get_current_screen();
+
+
+add_shortcode( 'baztag', 'wpdocs_baztag_func' );
+function wpdocs_baztag_func( $atts, $content = "" ) {
+    $content = "SALAM";
+    return $content;
+}
+
 
 
