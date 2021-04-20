@@ -194,9 +194,11 @@ add_action( 'admin_menu', 'logo_custom_menu_page' );
 
 function logo_custom_page_css_enq() {
 
-    wp_enqueue_style("logo-style-custom-page", get_stylesheet_uri());
+    wp_enqueue_style("logo-style-custom-page", get_stylesheet_uri() );
 
 }
 add_action("admin_enqueue_scripts", "logo_custom_page_css_enq");
+
+
  
 
