@@ -1,4 +1,5 @@
-<?php function ansome() {
+<?php wp_nav_menu( 'Primary menu logo' );
+ function ansome() {
     ?>
 
 <h1 style="color:#242523">SALAM</h1>
