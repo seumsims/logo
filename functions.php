@@ -172,7 +172,7 @@ function custom_menu_page_logo(){
     //esc_html_e( 'Admin Logo Page Test', 'logo' );  
     // esc_attr_e( get_theme_file_uri ("testmenupage.php") , 'logo' ) ;
     // esc_html_e( get_theme_file_uri ("testmenupage.php") , 'logo' );
-    esc_html_e( require_once("testmenupage.php") , 'logo' );
+    require_once("testmenupage.php");
 }
     add_menu_page( 
         __( 'Logo Menu Name', 'logo' ),
