@@ -6,7 +6,9 @@
                 <div class="row align-content-center align-items-center">
                     <div class="col-md-6 col-lg-3">
                         <div class="logo">
+                            <a href="<?php esc_url( site_url() ); ?>">
                             <img src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/logo.png" ); ?>" alt="">
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-7 d-none d-lg-inline-block">
