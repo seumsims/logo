@@ -31,12 +31,14 @@ function logo_bootstrapping() {
     add_theme_support( "custom-header" );
     add_theme_support( "custom-logo" );
 
-    add_theme_support( 'custom-logo', array(
-        'height' => 95,
-        'width'  => 38,
+    $logo_custom_top_bar_logo_box = array( 
+            
+        'width' => 95,
+        'height' => 38,
         'flex-width' => true,
         'flex-height' => true,
-    ) );
+    );
+    add_theme_support( "custom-logo", $logo_custom_top_bar_logo_box );
 
     $logo_custom_header_box_setting = array( 
             
