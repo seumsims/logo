@@ -34,8 +34,10 @@ function logo_bootstrapping() {
     add_theme_support( "custom-logo" );
 
     add_theme_support( 'custom-logo', array(
-        'height' => 95,
-        'width'  => 38,
+        'width'  => 95,
+        
+        'height' => 38,
+        
         'flex-width' => true,
         'flex-height' => true,
     ) );
