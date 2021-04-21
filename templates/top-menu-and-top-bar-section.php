@@ -7,7 +7,8 @@
                     <div class="col-md-6 col-lg-3">
                         <div class="logo">
                             <a href="<?php esc_url( site_url() ); ?>">
-                            <img src="<?php echo esc_url( get_template_directory_uri() . "/" . "assets/image/logo.png" ); ?>" alt="">
+                            
+                            <?php the_custom_logo(  ); ?>
                             </a>
                         </div>
                     </div>
