@@ -11,6 +11,20 @@ function logo_bootstrapping() {
     load_theme_textdomain("logo");
     add_theme_support("post-thumbnails");
     add_theme_support("title-tag");
+
+    add_theme_support( 'custom-background', array(
+        'default-image'          => '',
+        'default-preset'         => 'default', // 'default', 'fill', 'fit', 'repeat', 'custom'
+        'default-position-x'     => 'left',    // 'left', 'center', 'right'
+        'default-position-y'     => 'top',     // 'top', 'center', 'bottom'
+        'default-size'           => 'auto',    // 'auto', 'contain', 'cover'
+        'default-repeat'         => 'repeat',  // 'repeat-x', 'repeat-y', 'repeat', 'no-repeat'
+        'default-attachment'     => 'scroll',  // 'scroll', 'fixed'
+        'default-color'          => '',
+        'wp-head-callback'       => '_custom_background_cb',
+        'admin-head-callback'    => '',
+        'admin-preview-callback' => '',
+    ) );
     
     // add_post_type_support('page', 'thumbnail');
 
@@ -19,10 +33,10 @@ function logo_bootstrapping() {
 
     $logo_custom_top_bar_logo_box = array( 
             
-        "width" => '95',
-        "height" => '38',
+        'width' => 95,
+        'height' => 38,
         'flex-width' => true,
-        'flex-height' => true
+        'flex-height' => true,
     );
     add_theme_support( "custom-logo", $logo_custom_top_bar_logo_box );
 
@@ -31,7 +45,7 @@ function logo_bootstrapping() {
         'width' => 1200,
         'height' => 900,
         'flex-width' => true,
-        'flex-height' => true
+        'flex-height' => true,
     );
     add_theme_support( "custom-header", $logo_custom_header_box_setting );
     
