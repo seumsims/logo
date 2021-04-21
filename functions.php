@@ -12,6 +12,8 @@ function logo_bootstrapping() {
     add_theme_support("post-thumbnails");
     add_theme_support("title-tag");
 
+    //add_theme_support( array( 'editor-styles', 'align-wide' ) );
+
     add_theme_support( 'custom-background', array(
         'default-image'          => '',
         'default-preset'         => 'default', // 'default', 'fill', 'fit', 'repeat', 'custom'
