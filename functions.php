@@ -94,7 +94,7 @@ function logo_widgets_init() {
 		'id'            => 'logo-banner-text-id-1',
 		'before_widget' => '<div>',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h1 class="rounded">',
+		'before_title'  => '<h1 class="hidden rounded">',
 		'after_title'   => '</h1>',
 	) );
 

@@ -16,3 +16,7 @@ div#boxmID {
 span.logo-post-start-text {
     color: red;
 }
+
+.hidden {
+    display: none;
+}
