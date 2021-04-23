@@ -123,6 +123,13 @@ add_action("wp_enqueue_scripts", "logo_scripts");
 
 function logo_index_page_template_banner() {
 
+    // var_dump(is_front_page(  ));
+
+    if(is_front_page(  )) {
+
+        // var_dump(current_theme_supports( "custom-header" ));
+
+        if(current_theme_supports( "custom-header")) {
             
             ?>
 
@@ -134,8 +141,8 @@ function logo_index_page_template_banner() {
             </style>
 
             <?php
-        
-    
+        }
+    }
 }
 
 add_action( "wp_head", "logo_index_page_template_banner",100 );

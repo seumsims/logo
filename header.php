@@ -14,5 +14,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.png" />
     <?php  wp_head(); ?>
+    <?php 
+var_dump(get_page_template()); ?>
 </head>
 
