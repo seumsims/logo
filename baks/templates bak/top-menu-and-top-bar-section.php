@@ -25,7 +25,9 @@
                             
                         </div>
                     </div>
-                   
+                    <div class="col-md-6 col-lg-2 d-none d-xl-inline-block">
+                        <div class="header-btn d-flex align-content-center"><a href="#" class="btn">Download CV</a></div>
+                    </div>
                     <div class="col-12">
                         <div class="hibo-mobile-menu"></div>
                     </div>

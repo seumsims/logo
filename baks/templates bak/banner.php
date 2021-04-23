@@ -17,7 +17,13 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <div class=" bannar-person_image">
+                        <div class="t-slider-img"> </div>
+                        
+                   <div class="bannar-person">
+                    <img src="./assets/image/bannar/man-sheap.png" alt="">
+                </div>
+                    </div>
                 </div>
  
             </div>
