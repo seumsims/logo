@@ -1,6 +1,5 @@
 <?php 
-
-
+var_dump(wp_get_theme()->get_page_templates());
 
 
 
