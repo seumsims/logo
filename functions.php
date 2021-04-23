@@ -70,16 +70,36 @@ function logo_bootstrapping() {
 			)
 		);
 
+        register_nav_menus(
+            array(
+                'primary' => __( 'Primary menu logo', 'logo' ),
+                //'footer'  => __( 'Secondary menu', 'twentytwentyone' ),
+                'testmenu' => __( 'Test menu logo', 'logo' )
+            )
+        );
+
 }
 add_action("after_setup_theme","logo_bootstrapping");
 
-register_nav_menus(
-    array(
-        'primary' => esc_html__( 'Primary menu logo', 'logo' ),
-        //'footer'  => __( 'Secondary menu', 'twentytwentyone' ),
-        'testmenu' => __( 'Test menu logo', 'logo' )
-    )
-);
+
+
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function logo_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Logo Banner Text',
+		'id'            => 'logo-banner-text-id-1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'logo_widgets_init' );
 
 
 function logo_styles() {
@@ -116,6 +136,7 @@ function logo_scripts() {
     wp_enqueue_script("logo-main-js" , get_theme_file_uri ("assets/js/main.js"),array("jquery"),null,true);
 
     wp_enqueue_script("logo-main-custom-js" , get_theme_file_uri ("assets/js/custom.js"),array("jquery"),null,true);
+    
 }
 add_action("wp_enqueue_scripts", "logo_scripts");
 
