@@ -1,6 +1,6 @@
 <?php 
 
-
+var_dump(get_page_template(  ));
 
 
 
