@@ -7,7 +7,7 @@
                             <div class="col-xl-8">
                                 <div class="bannar-content">
                                     <?php if(is_active_sidebar( 'logo-banner-text-id-1' )) {
-                                        _e( 'works' );
+                                        dynamic_sidebar( 'logo-banner-text-id-1' );
                                     } ?>
                                 </div>
                             </div>
