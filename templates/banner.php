@@ -6,13 +6,9 @@
                         <div class="row">
                             <div class="col-xl-8">
                                 <div class="bannar-content">
-                                    <span>Get Every Single Solutions.</span>
-                                    <h1>I'm <span>a web designer</span></h1>
-                                    <p>I'm a Freelance UI/UX Designer and Developer based in London, England. I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.</p>
-                                    <div class="btn-group btn-two">
-                                        <a href="#" class="btn"><i class="fas fa-user"></i>more about me</a>
-                                        <a href="#" class="btn"><i class="fas fa-link"></i>prothfolio </a>
-                                    </div>
+                                    <?php if(is_active_sidebar( 'logo-banner-text-id-1' )) {
+                                        _e( 'works' );
+                                    } ?>
                                 </div>
                             </div>
                         </div>

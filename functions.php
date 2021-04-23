@@ -90,12 +90,12 @@ add_action("after_setup_theme","logo_bootstrapping");
 function logo_widgets_init() {
 
 	register_sidebar( array(
-		'name'          => 'Logo Banner Text',
+		'name'          => __('Logo Banner Text' , 'logo'),
 		'id'            => 'logo-banner-text-id-1',
 		'before_widget' => '<div>',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="rounded">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h1 class="rounded">',
+		'after_title'   => '</h1>',
 	) );
 
 }
