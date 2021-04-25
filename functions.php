@@ -161,8 +161,9 @@ function logo_index_page_template_banner() {
 
 add_action( "wp_head", "logo_index_page_template_banner",100 );
 
-//var_dump(get_post_meta());
-var_dump(get_posts());
+_e("<pre>");
+var_dump(get_post(403));
+_e("</pre>");
 
 
 
