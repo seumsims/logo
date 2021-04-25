@@ -11,6 +11,16 @@ _e("</pre>");
 
 */
 
+
+$post   = get_post( 534 );
+$output =  apply_filters( 'the_content', $post->post_content ); 
+_e( $output , 'logo' );
+
+_e(get_post_field('post_content', $post_id = 534));
+
+
+
+
 $obj = get_post_type_object( 'post' );
 echo $obj->labels->singular_name;
 $post   = get_post( 403 );
