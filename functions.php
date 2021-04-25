@@ -160,9 +160,11 @@ function logo_index_page_template_banner() {
 }
 
 add_action( "wp_head", "logo_index_page_template_banner",100 );
-
+$post   = get_post( 403 );
+$output =  apply_filters( 'the_content', $post->post_content );
 _e("<pre>");
-var_dump(get_post(403));
+
+var_dump($output);
 _e("</pre>");
 
 
