@@ -214,12 +214,12 @@ function logo_meta_box_id_1_save_data($post_id) {
 
     update_post_meta($post_id, "typefield" , $my_title);
 
-
+    
 
 }
 
 add_action( "save_post" , "logo_meta_box_id_1_save_data" );
 
-esc_html_e( get_post_meta( $post_id, "typefield", true ), "logo" );
+_e( get_post_meta( $post->ID, "typefield", true ), "logo" );
 
 
