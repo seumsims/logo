@@ -176,4 +176,14 @@ function logo_index_page_template_banner() {
 
 add_action( "wp_head", "logo_index_page_template_banner",100 );
 
+function logo_register_meta_box_id_1() {
+    add_meta_box( 'logo-c-meta-box-id-1', __( 'Logo Meta Box', 'logo' ), 
+    '', 'post' );
+}
+add_action( "wp_meta_boxes", "logo_register_meta_box_id_1" );
+
+function wpdocs_register_meta_boxes() {
+    add_meta_box( 'logo-c-meta-box-id-1', __( 'Logo Meta Box', 'textdomain' ), 'wpdocs_my_display_callback', 'post' );
+}
+add_action( 'add_meta_boxes', 'wpdocs_register_meta_boxes' );
 
