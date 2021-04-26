@@ -182,8 +182,12 @@ function logo_register_meta_box_id_1() {
 }
 add_action( "add_meta_boxes", "logo_register_meta_box_id_1" );
 
-function logo_function_display_callback_id_1( $post  ) {
-    return "SALAMA";
+function logo_function_display_callback_id_1(  ) {
+    ?>
+    <label><h1>Test</h1></label>
+    <input type="text" value="" placeholder=" type something ">
+
+     <?php
 }
 
 
