@@ -196,4 +196,28 @@ function logo_function_display_callback_id_1( $post ) {
      <?php
 }
 
+function logo_meta_box_id_1_save_data($post_id) {
+
+    if ( !isset($_POST['logo_meta_box_nonce_field_id_1']) ) {
+        return;
+    }
+
+    if ( !wp_verify_nonce( $_POST['logo_meta_box_nonce_field_id_1'], "logo_meta_box_id_nf_1") ) {
+        return;
+    }
+
+    if ( !isset($_POST['typefield']) ) {
+        return;
+    }
+
+    $logo_typefield_id_1 = sanitize_text_field( $_POST['typefield'] );
+
+    update_post_meta($post_id, "typefield" , $my_title);
+
+
+
+}
+
+add_action( "save_post" , "logo_meta_box_id_1_save_data" );
+
 
