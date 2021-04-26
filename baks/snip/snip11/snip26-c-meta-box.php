@@ -16,7 +16,10 @@ function logo_function_display_callback_id_1( $post ) {
     
     ?>
     <label><h1>Test</h1></label>
-    <input type="text" name="typefield" value="<?php  $logo_meta_data_insert_field_id_1  ?>" placeholder=" type something ">
+    <input type="text" name="typefield" value="<?php esc_attr_e( $logo_meta_data_insert_field_id_1  , "logo" ) ?>" placeholder=" type something ">
+    <div>
+    <?php // var_dump( get_post_meta( $post->ID, "typefield", true ) ); ?>
+    </div>
 
      <?php
 }
@@ -39,13 +42,12 @@ function logo_meta_box_id_1_save_data($post_id) {
 
     update_post_meta($post_id, "typefield" , $my_title);
 
-
+    
 
 }
 
 add_action( "save_post" , "logo_meta_box_id_1_save_data" );
 
-/*
 
 add_filter( 'rwmb_meta_boxes', 'your_prefix_register_meta_boxes' );
 
@@ -68,4 +70,24 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 
     return $meta_boxes;
 }
-*/
+
+
+
+ function render_meta_box_content( $post ) {
+ 
+    // Add an nonce field so we can check for it later.
+    wp_nonce_field( 'myplugin_inner_custom_box', 'myplugin_inner_custom_box_nonce' );
+
+    // Use get_post_meta to retrieve an existing value from the database.
+    $value = get_post_meta( $post->ID, '_my_meta_value_key', true );
+
+    // Display the form, using the current value.
+    ?>
+    <label for="myplugin_new_field">
+        <?php _e( 'Description for this field', 'textdomain' ); ?>
+    </label>
+    <input type="text" id="myplugin_new_field" name="myplugin_new_field" value="<?php echo esc_attr( $value ); ?>" size="25" />
+    <?php
+}
+
+
