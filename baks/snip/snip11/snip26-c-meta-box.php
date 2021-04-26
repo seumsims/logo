@@ -91,3 +91,23 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 }
 
 
+function op_register_menu_meta_box() {
+    add_meta_box(
+        'op-menu-meta-box-id',
+        esc_html__( 'Op Menu MetaBox Title', 'text-domain' ),
+        'op_render_menu_meta_box',
+        'nav-menus',
+        'side',
+        'core'
+        );
+}
+add_action( 'load-nav-menus.php', 'op_register_menu_meta_box' );
+ 
+function op_render_menu_meta_box() {
+    // Metabox content
+    echo '<strong>Hi, I am MetaBox.</strong>';
+}
+
+
+
+

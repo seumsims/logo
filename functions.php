@@ -193,7 +193,7 @@ function logo_function_display_callback_id_1( $post ) {
     <label><h1>Test</h1></label>
     <input type="text" name="typefield" value="<?php esc_attr_e( $logo_meta_data_insert_field_id_1  , "logo" ) ?>" placeholder=" type something ">
     <div>
-    <?php // var_dump( get_post_meta( $post->ID, "typefield", true ) ); ?>
+    <?php  var_dump( $logo_meta_data_insert_field_id_1 ); ?>
     </div>
 
      <?php
@@ -215,7 +215,7 @@ function logo_meta_box_id_1_save_data($post_id) {
 
     $logo_typefield_id_1 = sanitize_text_field( $_POST['typefield'] );
 
-    update_post_meta('post' , $post_id, "typefield" , $my_title);
+    update_post_meta( $post_id, "typefield" , $value);
 
     
 
