@@ -37,10 +37,34 @@ function logo_meta_box_id_1_save_data($post_id) {
 
     $logo_typefield_id_1 = sanitize_text_field( $_POST['typefield'] );
 
-    update_post_meta($post_id, "typefield" , $my_title);
+    update_post_meta($post_id, $logo_typefield_id_1 , $my_title);
 
 
 
 }
 
 add_action( "save_post" , "logo_meta_box_id_1_save_data" );
+
+
+
+add_filter( 'rwmb_meta_boxes', 'your_prefix_register_meta_boxes' );
+
+function your_prefix_register_meta_boxes( $meta_boxes ) {
+    $prefix = '';
+
+    $meta_boxes[] = [
+        'title'   => esc_html__( 'Untitled Field Group', 'online-generator' ),
+        'id'      => 'untitled',
+        'context' => 'normal',
+        'fields'  => [
+            [
+                'type'  => 'text',
+                'name'  => esc_html__( 'Text', 'online-generator' ),
+                'id'    => $prefix . 'text_cuzc1tplefl',
+                'clone' => true,
+            ],
+        ],
+    ];
+
+    return $meta_boxes;
+}

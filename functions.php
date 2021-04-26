@@ -193,7 +193,7 @@ function logo_function_display_callback_id_1( $post ) {
     <label><h1>Test</h1></label>
     <input type="text" name="typefield" value="<?php esc_attr_e( $logo_meta_data_insert_field_id_1  , "logo" ) ?>" placeholder=" type something ">
     <div>
-    <?php var_dump( get_post_meta( $post->ID, "typefield", true ) ); ?>
+    <?php // var_dump( get_post_meta( $post->ID, "typefield", true ) ); ?>
     </div>
 
      <?php
@@ -222,6 +222,29 @@ function logo_meta_box_id_1_save_data($post_id) {
 }
 
 add_action( "save_post" , "logo_meta_box_id_1_save_data" );
+
+
+add_filter( 'rwmb_meta_boxes', 'your_prefix_register_meta_boxes' );
+
+function your_prefix_register_meta_boxes( $meta_boxes ) {
+    $prefix = '';
+
+    $meta_boxes[] = [
+        'title'   => esc_html__( 'Untitled Field Group', 'online-generator' ),
+        'id'      => 'untitled',
+        'context' => 'normal',
+        'fields'  => [
+            [
+                'type'  => 'text',
+                'name'  => esc_html__( 'Text', 'online-generator' ),
+                'id'    => $prefix . 'text_cuzc1tplefl',
+                'clone' => true,
+            ],
+        ],
+    ];
+
+    return $meta_boxes;
+}
 
 
 
