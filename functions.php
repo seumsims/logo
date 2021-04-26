@@ -183,9 +183,15 @@ function logo_register_meta_box_id_1() {
 add_action( "add_meta_boxes", "logo_register_meta_box_id_1" );
 
 function logo_function_display_callback_id_1( $post ) {
+
+    wp_nonce_field( "logo_meta_box_id_nf_1" , "logo_meta_box_nonce_field_id_1");
+
+    $logo_meta_data_insert_field_id_1 = get_post_meta($post->ID,"typefield", true);
+
+    
     ?>
     <label><h1>Test</h1></label>
-    <input type="text" name="typefield" value="<?php esc_html_e( get_post_meta($post-ID,"typefield", true), "logo" ) ?>" placeholder=" type something ">
+    <input type="text" name="typefield" value="<?php esc_attr_e( $logo_meta_data_insert_field_id_1  , "logo" ) ?>" placeholder=" type something ">
 
      <?php
 }
