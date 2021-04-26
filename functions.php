@@ -177,15 +177,15 @@ function logo_index_page_template_banner() {
 add_action( "wp_head", "logo_index_page_template_banner",100 );
 
 function logo_register_meta_box_id_1() {
-    add_meta_box( 'logo-c-meta-box-id-1', __( 'Logo Meta Box', 'logo' ), 
-    'logo_function_display_callback_id_1', 'post' , 'normal' , 'default' );
+    add_meta_box( "logo-c-meta-box-id-1", __( "Logo Meta Box", "logo" ), 
+    "logo_function_display_callback_id_1", "post" , "normal" , "default" );
 }
 add_action( "add_meta_boxes", "logo_register_meta_box_id_1" );
 
-function logo_function_display_callback_id_1(  ) {
+function logo_function_display_callback_id_1( $post ) {
     ?>
     <label><h1>Test</h1></label>
-    <input type="text" value="" placeholder=" type something ">
+    <input type="text" name="typefield" value="<?php esc_html_e( get_post_meta($post-ID,"typefield", true), "logo" ) ?>" placeholder=" type something ">
 
      <?php
 }
