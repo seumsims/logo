@@ -220,6 +220,6 @@ function logo_meta_box_id_1_save_data($post_id) {
 
 add_action( "save_post" , "logo_meta_box_id_1_save_data" );
 
-_e( get_post_meta( $post->ID, "typefield", true ), "logo" );
+
 
 
