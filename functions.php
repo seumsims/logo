@@ -175,4 +175,3 @@ function posts_custom_id_columns($column_name, $id){
             echo $id;
     }
 }
-
