@@ -37,7 +37,7 @@ function logo_meta_box_id_1_save_data($post_id) {
 
     $logo_typefield_id_1 = sanitize_text_field( $_POST['typefield'] );
 
-    update_post_meta($post_id, $logo_typefield_id_1 , $my_title);
+    update_post_meta($post_id, "typefield" , $my_title);
 
 
 
@@ -45,7 +45,7 @@ function logo_meta_box_id_1_save_data($post_id) {
 
 add_action( "save_post" , "logo_meta_box_id_1_save_data" );
 
-
+/*
 
 add_filter( 'rwmb_meta_boxes', 'your_prefix_register_meta_boxes' );
 
@@ -68,3 +68,4 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
 
     return $meta_boxes;
 }
+*/
