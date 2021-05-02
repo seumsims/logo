@@ -1,6 +1,6 @@
 <?php 
 
-
+require_once ("required/customizer/kirki-setter.php");
 
 
 function logo_bootstrapping() {
