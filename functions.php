@@ -1,11 +1,8 @@
-<?php 
+<?php
 
-include_once( dirname( __FILE__ ) . '/required/customizer/kirki/class-kirki-installer-section.php' );
+require_once("required/customizer/kirki/class-kirki-installer-section.php");
+require_once("required/customizer/kirki/customizer-main.php");
 
-function logo_kirki_configuration() {
-    return array( 'url_path'     => get_stylesheet_directory_uri() . '/required/customizer/kirki/customizer-main.php' );
-}
-add_filter( 'kirki/config', 'logo_kirki_configuration' );
 
 function logo_bootstrapping() {
 
