@@ -15,7 +15,7 @@ if(class_exists('Kirki')) {
     );
 
     Kirki::add_panel( LOGO_CUSTOMIZER_PANEL_ID, array(
-        'priority'    => 10,
+        'priority'    => 140,
         'title'       => esc_html__( 'My Panel', 'logo' ),
         'description' => esc_html__( 'My panel description', 'logo' ),
     ) );
