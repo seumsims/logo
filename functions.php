@@ -1,15 +1,15 @@
 <?php
 
-
+require_once("required/customizer/kirki/class-kirki-preset.php");
+require_once("required/customizer/kirki/kirki-mod.php");
+require_once("required/customizer/logo-banner-customizer-preset.php");
+require_once("required/logoClasses/logoWidgets/logoTestWidgetClass.php");
 
 
 
 function logo_bootstrapping() {
 
-require_once("required/customizer/kirki/class-kirki-preset.php");
-require_once("required/customizer/kirki/kirki-mod.php");
-require_once("required/customizer/logo-banner-customizer-preset.php");
-require("required/testw.php");
+
 
 
     
