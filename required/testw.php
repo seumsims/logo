@@ -7,7 +7,7 @@ class logo_test_widget extends WP_Widget {
     parent::__construct(
       
     // Base ID of your widget
-    'wpb_widget', 
+    'logo_test_widget', 
       
     // Widget name will appear in UI
     __('WPBeginner Widget', 'wpb_widget_domain'), 
