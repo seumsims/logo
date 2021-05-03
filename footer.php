@@ -1,5 +1,7 @@
 </main>
+
     <footer class="black-bg pt-100 pb-100">
+    <?php the_widget( 'logo_test_widget' ); ?> 
         <div class="container">
             <div class="row">
                 <div class="col-md-4">

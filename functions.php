@@ -151,11 +151,11 @@ function logo_scripts() {
 }
 add_action("wp_enqueue_scripts", "logo_scripts");
 
-function arphabet_widgets_init() {
+function logo_widgets_init() {
 
 	register_sidebar( array(
-		'name'          => 'Home right sidebar',
-		'id'            => 'home_right_1',
+		'name'          => 'Footer Left Column',
+		'id'            => 'logo_footer_left_column_id_1',
 		'before_widget' => '<div>',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="rounded">',
@@ -163,7 +163,7 @@ function arphabet_widgets_init() {
 	) );
 
 }
-add_action( 'widgets_init', 'arphabet_widgets_init' );
+add_action( 'widgets_init', 'logo_widgets_init' );
 
      
      
