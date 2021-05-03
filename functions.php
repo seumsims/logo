@@ -162,6 +162,15 @@ function logo_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 
+    register_sidebar( array(
+		'name'          => 'Footer Right Column',
+		'id'            => 'logo_footer_right_column_id_1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
 }
 add_action( 'widgets_init', 'logo_widgets_init' );
 

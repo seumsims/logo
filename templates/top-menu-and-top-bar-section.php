@@ -25,10 +25,17 @@
                             
                         </div>
                     </div>
-                   
-                    <div class="col-12">
-                        <div class="hibo-mobile-menu"></div>
+                    <div class="col-md-6 col-lg-2 d-none d-xl-inline-block">
+                        <div class="header-btn d-flex align-content-center"><?php dynamic_sidebar( 'logo_footer_right_column_id_1' ) ; ?> </div>
                     </div>
+                    <div class="col-12">
+                        <div class="hibo-mobile-menu">
+                        
+                        </div>
+                       
+                    </div>
+
+                    
                 </div>
             </div>
         </div>

@@ -10,10 +10,10 @@ class logo_test_widget extends WP_Widget {
     'logo_test_widget', 
       
     // Widget name will appear in UI
-    __('WPBeginner Widget', 'logo'), 
+    __('Logo Test Widget', 'logo'), 
       
     // Widget description
-    array( 'description' => __( 'Sample widget based on WPBeginner Tutorial', 'logo' ), ) 
+    array( 'description' => __( 'Logo Theme Test Widget', 'logo' ), ) 
     );
     }
       
@@ -28,7 +28,7 @@ class logo_test_widget extends WP_Widget {
     echo $args['before_title'] . $title . $args['after_title'];
       
     // This is where you run the code and display the output
-    echo __( 'SALAM', 'logo' );
+    // echo __( 'SALAM', 'logo' );
     echo $args['after_widget'];
     }
               

@@ -1,7 +1,8 @@
 </main>
 
     <footer class="black-bg pt-100 pb-100">
-    <?php the_widget( 'logo_test_widget' ); ?> 
+    <?php dynamic_sidebar( 'logo_footer_left_column_id_1' ) ; ?> 
+    
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
