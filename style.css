@@ -20,3 +20,8 @@ span.logo-post-start-text {
 .hidden {
     display: none;
 }
+
+
+.logo-post-permalink-link-color-cls-id-1  a  {
+    color: chartreuse;
+}
