@@ -1,37 +1,49 @@
 <?php
 
-require_once("required/customizer/kirki/class-kirki-installer-section.php");
-require_once("required/customizer/kirki/kirki-mod.php");
+
+
 
 
 function logo_bootstrapping() {
+
+    require_once("required/customizer/kirki/class-kirki-preset.php");
+require_once("required/customizer/kirki/kirki-mod.php");
+require_once("required/customizer/logo-banner-customizer-preset.php");
 
     
 
     load_theme_textdomain("logo");
     add_theme_support("post-thumbnails");
     add_theme_support("title-tag");
+    add_theme_support( "custom-header" );
+    //add_theme_support( "custom-logo" );
 
     //add_theme_support( array( 'editor-styles', 'align-wide' ) );
 
+    
+
     add_theme_support( 'custom-background', array(
         'default-image'          => '',
-        'default-preset'         => 'default', // 'default', 'fill', 'fit', 'repeat', 'custom'
-        'default-position-x'     => 'left',    // 'left', 'center', 'right'
-        'default-position-y'     => 'top',     // 'top', 'center', 'bottom'
+        'default-preset'         => 'fit', // 'default', 'fill', 'fit', 'repeat', 'custom'
+        'default-position-x'     => 'center',    // 'left', 'center', 'right'
+        'default-position-y'     => 'center',     // 'top', 'center', 'bottom'
         'default-size'           => 'auto',    // 'auto', 'contain', 'cover'
-        'default-repeat'         => 'repeat',  // 'repeat-x', 'repeat-y', 'repeat', 'no-repeat'
-        'default-attachment'     => 'scroll',  // 'scroll', 'fixed'
+        'default-repeat'         => 'no-repeat',  // 'repeat-x', 'repeat-y', 'repeat', 'no-repeat'
+        'default-attachment'     => 'fixed',  // 'scroll', 'fixed'
         'default-color'          => '',
         'wp-head-callback'       => '_custom_background_cb',
         'admin-head-callback'    => '',
         'admin-preview-callback' => '',
     ) );
+
+    
+    
+    
+    
     
     // add_post_type_support('page', 'thumbnail');
 
-    add_theme_support( "custom-header" );
-    add_theme_support( "custom-logo" );
+    
 
     add_theme_support( 'custom-logo', array(
         'width'  => 95,
@@ -44,8 +56,10 @@ function logo_bootstrapping() {
 
     $logo_custom_header_box_setting = array( 
             
+        
         'width' => 1200,
         'height' => 900,
+        
         'flex-width' => true,
         'flex-height' => true,
     );
@@ -90,14 +104,19 @@ add_action("after_setup_theme","logo_bootstrapping");
 
 function logo_styles() {
     wp_enqueue_style("logo-style", get_stylesheet_uri());
-    wp_enqueue_style("logo-bootstarp", get_theme_file_uri ("assets/css/bootstrap.min.css"));
+    
     wp_enqueue_style("logo-owl-carou-sel",  get_theme_file_uri ("assets/css/owl.carousel.min.css"));
     wp_enqueue_style("logo-mean-menu", get_theme_file_uri ("assets/css/meanmenu.css"));
     wp_enqueue_style("logo-font-awesome-all", get_theme_file_uri ("assets/css/fontawesome-all.min.css"));
-    wp_enqueue_style("logo-all-min-css", get_theme_file_uri ("assets/css/all.min.css"));
-
+    
+    wp_enqueue_style("logo-bootstarp", get_theme_file_uri ("assets/css/bootstrap.min.css"));
+    
     wp_enqueue_style("logo-css-main-css", get_theme_file_uri ("assets/css/main.css"));
+    wp_enqueue_style("logo-all-min-css", get_theme_file_uri ("assets/css/all.min.css"));
     wp_enqueue_style("logo-css-custom-css", get_theme_file_uri ("assets/css/custom.css"));
+    wp_enqueue_style("logo-style", get_stylesheet_uri());
+    
+    
 }
 
 add_action("wp_enqueue_scripts", "logo_styles");
@@ -128,22 +147,7 @@ add_action("wp_enqueue_scripts", "logo_scripts");
 
 
 
-function logo_index_page_template_banner() {
 
-            
-            ?>
 
-            <style>
-                .bannar-bg-img {
-                    background-image: url(<?php esc_html_e( header_image() ); ?>);
-                    background-size: cover;
-                }
-            </style>
 
-            <?php
-        
-    
-}
-
-add_action( "wp_head", "logo_index_page_template_banner",100 );
 

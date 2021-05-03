@@ -17,7 +17,7 @@
     <?php 
 //var_dump(get_page_template()); ?>
 </head>
-<body <?php body_class(  ); ?>>
+<body <?php body_class( array('logo-preset-bg-color') ); ?>>
 
 <?php get_template_part( "templates/top-menu-and-top-bar-section" ); ?> 
 

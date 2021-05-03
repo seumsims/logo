@@ -3,6 +3,8 @@ Theme Name: Logo
 Version: 1
 Text Domain: logo
 */
+
+
 div#boxmID {
     margin: 10px 20px 0 2px;
 }
@@ -25,3 +27,5 @@ span.logo-post-start-text {
 .logo-post-permalink-link-color-cls-id-1  a  {
     color: #00ff55;
 }
+
+.logo-preset-bg-color { background: #141414 ;}
