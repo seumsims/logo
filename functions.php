@@ -1,7 +1,7 @@
 <?php
 
 require_once("required/customizer/kirki/class-kirki-installer-section.php");
-require_once("required/customizer/kirki/customizer-main.php");
+require_once("required/customizer/kirki/kirki-mod.php");
 
 
 function logo_bootstrapping() {

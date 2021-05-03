@@ -16,23 +16,23 @@ if(class_exists('Kirki')) {
 
     Kirki::add_panel( LOGO_CUSTOMIZER_PANEL_ID, array(
         'priority'    => 140,
-        'title'       => esc_html__( 'My Panel', 'logo' ),
-        'description' => esc_html__( 'My panel description', 'logo' ),
+        'title'       => esc_html__( 'Logo Panel', 'logo' ),
+        'description' => esc_html__( 'Logo panel description', 'logo' ),
     ) );
 
-    Kirki::add_section( 'logo_homepage', array(
-        'title'          => esc_html__( 'My Section', 'logo' ),
-        'description'    => esc_html__( 'My section description.', 'logo' ),
+    Kirki::add_section( 'logo_about_section_id_1', array(
+        'title'          => esc_html__( 'Logo Section', 'logo' ),
+        'description'    => esc_html__( 'Logo section description.', 'logo' ),
         'panel'          => LOGO_CUSTOMIZER_PANEL_ID,
         'priority'       => 160,
     ) );
 
     Kirki::add_field( LOGO_CUSTOMIZER_CONFIG_ID, [
         'type'     => 'text',
-        'settings' => 'text_setting',
-        'label'    => esc_html__( 'Text Control', 'logo' ),
-        'section'  => 'logo_homepage',
-        'default'  => esc_html__( 'This is a default value', 'logo' ),
+        'settings' => 'logo_about_section_h1_text_setting_id_1',
+        'label'    => esc_html__( 'Logo About H1 Text ', 'logo' ),
+        'section'  => 'logo_about_section_id_1',
+        'default'  => esc_html__( 'Hi, I’m James Watt', 'logo' ),
         'priority' => 10,
     ] );
 
