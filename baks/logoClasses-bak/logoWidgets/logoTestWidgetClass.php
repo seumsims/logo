@@ -60,8 +60,10 @@ class logo_test_widget extends WP_Widget {
     } 
      
      
-    // Register and load the widget
-    function wpb_load_widget() {
-        register_widget( 'wpb_widget' );
-    }
-    add_action( 'widgets_init', 'wpb_load_widget' );
+  
+
+        // Register and load the widget
+        function logo_test_load_widget() {
+            register_widget( 'logo_test_widget' );
+        }
+        add_action( 'widgets_init', 'logo_test_load_widget' );

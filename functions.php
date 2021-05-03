@@ -3,7 +3,7 @@
 require_once("required/customizer/kirki/class-kirki-preset.php");
 require_once("required/customizer/kirki/kirki-mod.php");
 require_once("required/customizer/logo-banner-customizer-preset.php");
-require_once("required/logoClasses/logoWidgets/logoTestWidgetClass.php");
+require_once("required/logoTestWidgetClass.php");
 
 
 
@@ -167,11 +167,7 @@ add_action( 'widgets_init', 'arphabet_widgets_init' );
 
      
      
-    // Register and load the widget
-    function logo_test_load_widget() {
-        register_widget( 'logo_test_widget' );
-    }
-    add_action( 'widgets_init', 'logo_test_load_widget' );
+
 
 
 
