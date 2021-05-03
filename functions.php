@@ -164,13 +164,13 @@ function arphabet_widgets_init() {
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
 // Creating the widget 
-class wpb_widget extends WP_Widget {
+class logo_test_widget extends WP_Widget {
   
     function __construct() {
     parent::__construct(
       
     // Base ID of your widget
-    'wpb_widget', 
+    'logo_test_widget', 
       
     // Widget name will appear in UI
     __('WPBeginner Widget', 'wpb_widget_domain'), 
@@ -224,10 +224,10 @@ class wpb_widget extends WP_Widget {
      
      
     // Register and load the widget
-    function wpb_load_widget() {
-        register_widget( 'wpb_widget' );
+    function logo_test_load_widget() {
+        register_widget( 'logo_test_widget' );
     }
-    add_action( 'widgets_init', 'wpb_load_widget' );
+    add_action( 'widgets_init', 'logo_test_load_widget' );
 
 
 
