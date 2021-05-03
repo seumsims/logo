@@ -1,8 +1,7 @@
 <?php get_header( ); ?>  
 
-<body <?php body_class(  ); ?>>
-
-
+  
+<?php get_template_part( "templates/banner" ); ?>   
 
 
 <?php get_footer(); ?>   

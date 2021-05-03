@@ -2,7 +2,7 @@
 
 <body <?php body_class(  ); ?>>
 
-  
+
 
 
 <?php get_footer(); ?>   

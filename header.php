@@ -17,4 +17,7 @@
     <?php 
 //var_dump(get_page_template()); ?>
 </head>
+<body <?php body_class(  ); ?>>
+
+<?php get_template_part( "templates/top-menu-and-top-bar-section" ); ?> 
 

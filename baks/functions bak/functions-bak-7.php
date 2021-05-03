@@ -86,6 +86,23 @@ add_action("after_setup_theme","logo_bootstrapping");
 
 
 
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function logo_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => __('Logo Banner Text' , 'logo'),
+		'id'            => 'logo-banner-text-id-1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h1 class="hidden rounded">',
+		'after_title'   => '</h1>',
+	) );
+
+}
+add_action( 'widgets_init', 'logo_widgets_init' );
 
 
 function logo_styles() {
